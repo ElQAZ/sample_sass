@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @extend %section-padding;
+    &__social-bar {
+        display: flex;
+    }
+    &__link {
+        display: block;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__block {
+        margin: $margin-default;
+    }
+    &__copyright {
+        color: $light-grey;
+    }
+    @include tablet-landscape-up {
+        flex-wrap: nowrap;
+    } 
+}
+
+.footer__follow-block>.text {
+    max-width: 340px;
+}

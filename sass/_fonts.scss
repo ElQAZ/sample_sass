@@ -1,0 +1,35 @@
+%font-default {
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.title {
+    color: $dark-grey;
+    margin: $margin-default;
+    &--primary {
+        max-width: 580px;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 70px;
+        @extend .title;
+    }
+    &--section {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 50px;
+        @extend .title;
+    }
+    &--block {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        @extend .title;
+    }
+}
+
+.text {
+    @extend %font-default;
+    color: $grey;
+    margin: $margin-default;
+}

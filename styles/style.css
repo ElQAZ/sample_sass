@@ -1,0 +1,378 @@
+.features__link, .sign-in, body, .btn, .btn--red, .btn--white, .text {
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.title, .title--block, .title--section, .title--primary {
+  color: #0B132A;
+  margin: 10px;
+}
+.title--primary {
+  max-width: 580px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+}
+.title--section {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+}
+.title--block {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.text {
+  color: #4F5665;
+  margin: 10px;
+}
+
+.btn, .btn--red, .btn--white {
+  display: block;
+  border: 2px solid #F53838;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px;
+  width: 250px;
+  padding: 15px 0;
+  line-height: 19px;
+  color: white;
+  transition: all 0.3s;
+}
+.btn--ovaled {
+  width: 150px;
+  padding: 12px 0;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 50px;
+  box-shadow: none;
+}
+.btn--white {
+  background: white;
+  color: #F53838;
+}
+.btn--white:hover {
+  background: #F53838;
+  color: white;
+}
+.btn--red {
+  background: #F53838;
+  border-radius: 10px;
+}
+.btn--red:hover {
+  box-shadow: 0 36px 80px -15px #F53838;
+}
+
+.features, .btn-bar, .header {
+  display: flex;
+  align-items: center;
+}
+
+.bg {
+  background: #fff;
+}
+.bg--grey {
+  background: #F8F8F8;
+}
+
+.footer, .map, .options, .header {
+  padding: 40px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+body {
+  font-family: "Rubik", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  min-width: 320px;
+}
+
+.header {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 10px;
+}
+
+.sign-in {
+  font-weight: 500;
+  margin: 10px;
+}
+.sign-in:hover {
+  text-decoration: underline;
+}
+
+.promo {
+  background: url(../design/img-promo.png) right bottom no-repeat;
+  background-size: 50%;
+  padding: 40px 0 100px;
+}
+@media screen and (min-width: 600px) {
+  .promo {
+    padding: 40px 0;
+  }
+}
+
+.promo .text {
+  max-width: 580px;
+  padding: 20px 0 40px;
+}
+
+.features {
+  padding: 120px 0;
+  flex-wrap: wrap;
+}
+.features__bg {
+  margin: 10px;
+}
+.features__img {
+  display: block;
+  width: 100%;
+}
+.features__descript {
+  order: -1;
+}
+.features__link {
+  color: #4F5665;
+  transition: all 0.3s;
+}
+@media screen and (min-width: 600px) {
+  .features {
+    flex-wrap: nowrap;
+  }
+  .features__bg {
+    flex-basis: 50%;
+  }
+  .features__descript {
+    flex-basis: 50%;
+    order: 0;
+  }
+}
+
+.features .list {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+.features .list__item {
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+.features .list__item::before {
+  content: "";
+  display: inline-flex;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  width: 21px;
+  height: 21px;
+  background: url(../design/ic-check-circle.svg) left center no-repeat;
+}
+.features .list__item:hover {
+  transform: scale(1.1) translateX(30px);
+}
+
+.options {
+  text-align: center;
+}
+.options__block {
+  display: grid;
+}
+@media screen and (min-width: 900px) {
+  .options__block {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.options__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #DDD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
+  margin: 25px auto;
+}
+@media screen and (min-width: 600px) {
+  .options__card {
+    padding: 20px 100px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .options__card {
+    margin: 25px;
+    padding: 20px;
+  }
+}
+.options__card:hover {
+  border: 2px solid #F53838;
+}
+.options__img {
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .options__img {
+    width: 50%;
+  }
+}
+.options__paid::after {
+  content: " / mo";
+  color: #AFB5C0;
+}
+
+.options > .title--section {
+  padding-top: 2%;
+}
+
+.options .text {
+  padding-bottom: 2%;
+}
+
+.options .list {
+  list-style: none;
+  margin: 10px;
+  margin-bottom: auto;
+  padding: 0;
+  text-align: left;
+}
+.options .list__item {
+  padding: 10px 0;
+  white-space: nowrap;
+}
+.options .list__item::before {
+  content: "";
+  display: inline-flex;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  width: 21px;
+  height: 21px;
+  background: url(../design/ic-check-mark.svg) left center no-repeat;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.map__img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+}
+.map__img:hover {
+  transform: scale(1.1);
+}
+.map__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  flex-wrap: wrap;
+}
+.map__link {
+  display: inline-block;
+  width: 190px;
+  height: 60px;
+  margin: 15px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.map__link--netflix {
+  background: url(../design/ic-netflix.png) center no-repeat;
+}
+.map__link--reddit {
+  background: url(../design/ic-reddit.png) center no-repeat;
+}
+.map__link--amazon {
+  background: url(../design/ic-amazon.png) center no-repeat;
+}
+.map__link--discord {
+  background: url(../design/ic-discord.png) center no-repeat;
+}
+.map__link--spotify {
+  background: url(../design/ic-spotify.png) center no-repeat;
+}
+.map__link:hover {
+  transform: scale(1.1);
+}
+
+.map > .title--section {
+  padding-top: 2%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.map .text {
+  padding-bottom: 2%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__social-bar {
+  display: flex;
+}
+.footer__link {
+  display: block;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__block {
+  margin: 10px;
+}
+.footer__copyright {
+  color: #AFB5C0;
+}
+@media screen and (min-width: 900px) {
+  .footer {
+    flex-wrap: nowrap;
+  }
+}
+
+.footer__follow-block > .text {
+  max-width: 340px;
+}
+
+.social {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  margin: 10px;
+  box-shadow: inset 0 0 10px 0 white;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s;
+}
+.social--facebook {
+  background: #F53838 url(../design/ic-facebook.png);
+}
+.social--twitter {
+  background: #F53838 url(../design/ic-twitter.png);
+}
+.social--instagram {
+  background: #F53838 url(../design/ic-instagram.png);
+}
+.social:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */

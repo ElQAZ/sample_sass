@@ -1,0 +1,33 @@
+.btn {
+    display: block;
+    border: 2px solid $red;
+    text-align: center;
+    box-sizing: border-box;
+    @extend %font-default;
+    margin: $margin-default;
+    width: 250px;
+    padding: 15px 0;
+    line-height: 19px;
+    color: white;
+    transition: all 0.3s;
+    &--ovaled {
+        width: 150px;
+        padding: 12px 0;
+        font-size: 16px;
+        line-height: 19px;
+        border-radius: 50px;
+        box-shadow: none;
+    }
+    &--white {
+        @extend .btn;
+        @include color-btn(white);
+    }
+    &--red {
+        @extend .btn;
+        background: $red;
+        border-radius: 10px;
+        &:hover {
+            box-shadow: 0 36px 80px -15px $red;
+        }
+    }
+}

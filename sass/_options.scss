@@ -1,0 +1,71 @@
+.options {
+    @extend %section-padding;
+    text-align: center;
+    &__block {
+        display: grid;
+        @include tablet-landscape-up {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid #DDD;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 20px;
+        background: white;
+        margin: 25px auto;
+        @include tablet-portrait-up {
+            padding: 20px 100px;
+        }
+        @include tablet-landscape-up {
+            margin: 25px;
+            padding: 20px;
+        }
+        &:hover {
+            border: 2px solid $red;
+        }
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        @include tablet-landscape-up {
+            width: 50%;
+        }
+    }
+    &__paid::after {
+        content: " / mo";
+        color: $light-grey;
+    }
+}
+
+.options>.title--section {
+    padding-top: 2%;
+}
+
+.options .text {
+    padding-bottom: 2%;
+}
+
+.options .list {
+    list-style: none;
+    margin: $margin-default;
+    margin-bottom: auto;
+    padding: 0;
+    text-align: left;
+    &__item {
+        padding: 10px 0;
+        white-space: nowrap;
+        &::before {
+            content: "";
+            display: inline-flex;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            width: 21px;
+            height: 21px;
+            background: url(../design/ic-check-mark.svg) left center no-repeat;
+        }
+    }
+}

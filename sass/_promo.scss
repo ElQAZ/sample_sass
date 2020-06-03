@@ -1,0 +1,14 @@
+.promo {
+    background: url(../design/img-promo.png) right bottom no-repeat;
+    background-size: 50%;
+    padding: 40px 0 100px;
+    @include tablet-portrait-up {
+        padding: 40px 0;
+    } 
+}
+
+.promo .text {
+    max-width: 580px;
+    padding: 20px 0 40px;
+}
+

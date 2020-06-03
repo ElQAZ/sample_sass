@@ -1,0 +1,54 @@
+.features {
+    padding: 120px 0;
+    @extend %flex-align;
+    flex-wrap: wrap;
+    &__bg {
+        margin: $margin-default;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+    }
+    &__descript {
+        order: -1;
+    }
+    &__link {
+        @extend %font-default;
+        color: $grey;
+        transition: all 0.3s;
+    }
+    @include tablet-portrait-up {
+        flex-wrap: nowrap;
+        &__bg {
+            flex-basis: 50%;
+        }
+        &__descript {
+            flex-basis: 50%;
+            order: 0;
+        }
+    } 
+}
+
+.features .list {
+    list-style: none;
+    margin: $margin-default;
+    padding: 0;
+    &__item {
+        padding: 10px 0;
+        transition: all 0.3s;
+        &::before {
+            content: "";
+            display: inline-flex;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            width: 21px;
+            height: 21px;
+            background: url(../design/ic-check-circle.svg) left center no-repeat;
+        }
+        &:hover {
+            transform: scale(1.1) translateX(30px);
+        }
+    }
+}
+
+

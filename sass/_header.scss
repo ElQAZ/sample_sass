@@ -1,0 +1,23 @@
+.header {
+    @extend %section-padding;
+    @extend %flex-align;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: $margin-default;
+}
+
+.btn-bar {
+    @extend %flex-align;
+}
+
+.sign-in {
+    font-weight: 500;
+    @extend %font-default;
+    margin: $margin-default;
+    &:hover {
+        text-decoration: underline;
+    }
+}

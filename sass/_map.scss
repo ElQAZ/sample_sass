@@ -1,0 +1,60 @@
+.map {
+    @extend %section-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $margin-default;
+    &__img {
+        display: block;
+        width: 100%;
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+        flex-wrap: wrap;
+    }
+    &__link {
+        display: inline-block;
+        width: 190px;
+        height: 60px;
+        margin: 15px;
+        text-decoration: none;
+        transition: all 0.3s;
+        &--netflix {
+            background: url(../design/ic-netflix.png) center no-repeat;
+        }
+        &--reddit {
+            background: url(../design/ic-reddit.png) center no-repeat;
+        }
+        &--amazon {
+            background: url(../design/ic-amazon.png) center no-repeat;
+        }
+        &--discord {
+            background: url(../design/ic-discord.png) center no-repeat;
+        }
+        &--spotify {
+            background: url(../design/ic-spotify.png) center no-repeat;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.map>.title--section {
+    padding-top: 2%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.map .text {
+    padding-bottom: 2%;
+    max-width: 500px;
+    text-align: center;
+}
